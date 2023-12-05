@@ -1,0 +1,626 @@
+@font-face {
+    font-family: 'TheJamsil5';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.TheJamsil5 * {
+    font-family: 'TheJamsil5', serif;
+}
+
+@font-face {
+    font-family: 'BMEULJIRO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.BMEULJIRO * {
+    font-family: 'BMEULJIRO', serif;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * {
+ font-family: 'Nanum Myeongjo', serif;
+}
+
+@font-face {
+    font-family: 'KCC-eunyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.KCC-eunyoung * {
+ font-family: 'KCC-eunyoung', sans-serif;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sansMedium * {
+ font-family: 'GmarketSansMedium', sans-serif;
+}
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.gyeonggiBatang * {
+ font-family: 'GyeonggiBatang', sans-serif;
+}
+  @font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+  }
+  
+  .lottemarthappy * {
+   font-family: 'LotteMartHappy', sans-serif;
+  }
+
+
+  @font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .Cafe24Ssurround * {
+   font-family: 'Cafe24Ssurround', sans-serif;
+  }
+
+    @font-face {
+        font-family: 'Dovemayo-Medium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .Dovemayo * {
+    font-family: 'Dovemayo-Medium', sans-serif;
+    }
+
+    @font-face {
+        font-family: 'SUIT-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .suit * {
+    font-family: 'SUIT-Regular', sans-serif;
+    }
+
+    @font-face {
+        font-family: 'KOHIBaeumOTF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .baeum * {
+    font-family: 'KOHIBaeumOTF', sans-serif;
+    }
+
+    @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+/* FONT  END ========================================================================================================= */
+/* CSS START */
+
+.ftred{     color: #FF0000 !important;}
+.ftBold{    font-weight: bold !important;}
+.center{    text-align: center !important;}
+.dimmed{z-index:998; background-color: rgba(0, 0, 0, 0.75); position: fixed; left: 0; right: 0; top: 0; bottom: 0; }
+
+.loadlayer{z-index:999; text-align:center; min-height: 10rem; max-height: 13rem; position: fixed; top: 0; left: 0; bottom: 0; right: 0; margin: auto;}
+.layer_popup{display: contents; position: fixed; top: 0; left: 0; right: 0; bottom: 0;}
+.layer_popup div{display:block; text-align:center;}
+.layer{z-index:999; width: 30rem !important; min-height: 10rem; max-height: 13rem; background-color: #fff; border: 1px solid #e5e5e5; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; border-radius: 5px; box-shadow: 0 0 10px -4px;}
+.layer p {font-size:1.8rem; margin:1.5rem 0}
+.layer button {font-size:1.5rem; padding:0.5rem 1rem; background:#4375DB; color:fff; border-radius:0.5rem}
+
+
+@media ( max-width: 768px ) {
+	.layer_popup {position:fixed; display: inline-block; z-index:999}
+	.layer {width:90% !important}
+	.layer p{margin: 1rem}	
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    cursor: default;
+    margin: 0 1%;
+    width: 98%;
+}
+
+.content ul {list-style: none;}
+
+.sample {
+	padding: 20;
+    width: calc(126px * 4.5);
+    height: calc(34px * 4.5);
+    display: inline-table;
+    pointer-events : none;
+}
+
+.sample .shape {
+    padding: 2% 6%;
+    width: calc(126px * 4);
+    height: calc(34px * 4);
+    border: 2px solid;
+    position: relative;
+	border-radius: 10px;
+    display: flex;
+}
+
+.sample .shape .area_img{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.sample .shape .area_img img{
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.sample .shape .area_txt{
+    flex: 1 0 auto;
+    margin: auto;
+}
+
+.sample .shape .area_txt p{
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* TheJamsil5 더잠실체 */
+.sample .TheJamsil5 .area_txt .txt1{ font-size: 36.5px;                 }
+.sample.number .TheJamsil5 .area_txt .txt1{ font-size: 29px;            }
+.sample.area_img .TheJamsil5 .area_txt .txt1{ font-size: 29px;          }
+.sample.area_img.number .TheJamsil5 .area_txt .txt1{ font-size: 21.5px; }
+.sample .TheJamsil5 .area_txt .txt2{ font-size: 57px;                   }
+.sample.words .TheJamsil5 .area_txt .txt2{ font-size: 57px;             }
+.sample.area_img .TheJamsil5 .area_txt .txt2{ font-size: 44px;          }
+.sample.area_img.words .TheJamsil5 .area_txt .txt2{ font-size: 44px;    }
+
+/* BMEULJIRO 을지로체 */
+.sample .BMEULJIRO .area_txt .txt1{ font-size: 40px;                   }
+.sample.number .BMEULJIRO .area_txt .txt1{ font-size: 29px;            }
+.sample.area_img .BMEULJIRO .area_txt .txt1{ font-size: 29.5px;        }
+.sample.area_img.number .BMEULJIRO .area_txt .txt1{ font-size: 25px;   }
+.sample .BMEULJIRO .area_txt .txt2{ font-size: 65px;                   }
+.sample.words .BMEULJIRO .area_txt .txt2{ font-size: 60px;             }
+.sample.area_img .BMEULJIRO .area_txt .txt2{ font-size: 51px;          }
+.sample.area_img.words .BMEULJIRO .area_txt .txt2{ font-size: 48px;    }
+
+/* nanummyeongjo 나눔명조 */
+.sample .nanummyeongjo .area_txt .txt1{ font-size: 33px;                   }
+.sample.number .nanummyeongjo .area_txt .txt1{ font-size: 25px;            }
+.sample.area_img .nanummyeongjo .area_txt .txt1{ font-size: 24px;          }
+.sample.area_img.number .nanummyeongjo .area_txt .txt1{ font-size: 20px;   }
+.sample .nanummyeongjo .area_txt .txt2{ font-size: 60px;                   }
+.sample.words .nanummyeongjo .area_txt .txt2{ font-size: 57px;             }
+.sample.area_img .nanummyeongjo .area_txt .txt2{ font-size: 45px;          }
+.sample.area_img.words .nanummyeongjo .area_txt .txt2{ font-size: 45px;    }
+
+/* KCC-eunyoung KCC은영체 */
+.sample .KCC-eunyoung .area_txt p{ margin: -10px;                         }
+.sample.area_img .KCC-eunyoung .area_txt p{ margin: -20px;                }
+.sample .KCC-eunyoung .area_txt .txt1{ font-size: 61px;                   }
+.sample.number .KCC-eunyoung .area_txt .txt1{ font-size: 35px;            }
+.sample.area_img .KCC-eunyoung .area_txt .txt1{ font-size: 47px;          }
+.sample.area_img.number .KCC-eunyoung .area_txt .txt1{ font-size: 35px;   }
+.sample .KCC-eunyoung .area_txt .txt2{ font-size: 100px;                  }
+.sample.words .KCC-eunyoung .area_txt .txt2{ font-size: 82px;             }
+.sample.area_img .KCC-eunyoung .area_txt .txt2{ font-size: 80px;          }
+.sample.area_img.words .KCC-eunyoung .area_txt .txt2{ font-size: 77px;    }
+
+
+/* nanumgothic 나눔고딕 */
+.sample .nanumgothic .area_txt p{ margin: -5px;                          }
+.sample.area_img .nanumgothic .area_txt p{ margin: -10px;                }
+.sample .nanumgothic .area_txt .txt1{ font-size: 34px;                   }
+.sample.number .nanumgothic .area_txt .txt1{ font-size: 25px;            }
+.sample.area_img .nanumgothic .area_txt .txt1{ font-size: 25px;          }
+.sample.area_img.number .nanumgothic .area_txt .txt1{ font-size: 19px;   }
+.sample .nanumgothic .area_txt .txt2{ font-size: 67px;                   }
+.sample.words .nanumgothic .area_txt .txt2{ font-size: 62px;             }
+.sample.area_img .nanumgothic .area_txt .txt2{ font-size: 51px;          }
+.sample.area_img.words .nanumgothic .area_txt .txt2{ font-size: 50px;    }
+
+/* sansMedium 산스체 */
+.sample .sansMedium .area_txt .txt1{ font-size: 34px;                   }
+.sample.number .sansMedium .area_txt .txt1{ font-size: 25px;            }
+.sample.area_img .sansMedium .area_txt .txt1{ font-size: 25.5px;        }
+.sample.area_img.number .sansMedium .area_txt .txt1{ font-size: 21.5px; }
+.sample .sansMedium .area_txt .txt2{ font-size: 62px;                   }
+.sample.words .sansMedium .area_txt .txt2{ font-size: 58px;             }
+.sample.area_img .sansMedium .area_txt .txt2{ font-size: 44px;          }
+.sample.area_img.words .sansMedium .area_txt .txt2{ font-size: 47px;    }
+
+/* gyeonggiBatang 경기천년바탕체 */
+.sample .gyeonggiBatang .area_txt .txt1{ font-size: 37px;                   }
+.sample.number .gyeonggiBatang .area_txt .txt1{ font-size: 26px;            }
+.sample.area_img .gyeonggiBatang .area_txt .txt1{ font-size: 28px;          }
+.sample.area_img.number .gyeonggiBatang .area_txt .txt1{ font-size: 22.5px; }
+.sample .gyeonggiBatang .area_txt .txt2{ font-size: 72px;                   }
+.sample.words .gyeonggiBatang .area_txt .txt2{ font-size: 64px;             }
+.sample.area_img .gyeonggiBatang .area_txt .txt2{ font-size: 55px;          }
+.sample.area_img.words .gyeonggiBatang .area_txt .txt2{ font-size: 56px;    }
+
+/* lottemarthappy 롯데행복체 */
+.sample .lottemarthappy .area_txt .txt1{ font-size: 37px;                   }
+.sample.number .lottemarthappy .area_txt .txt1{ font-size: 28px;            }
+.sample.area_img .lottemarthappy .area_txt .txt1{ font-size: 28px;          }
+.sample.area_img.number .lottemarthappy .area_txt .txt1{ font-size: 22px;   }
+.sample .lottemarthappy .area_txt .txt2{ font-size: 75px;                   }
+.sample.words .lottemarthappy .area_txt .txt2{ font-size: 72px;             }
+.sample.area_img .lottemarthappy .area_txt .txt2{ font-size: 58px;          }
+.sample.area_img.words .lottemarthappy .area_txt .txt2{ font-size: 58px;    }
+
+/* Cafe24Ssurround 써라운드체 */
+.sample .Cafe24Ssurround .area_txt .txt1{ font-size: 35px;                   }
+.sample.number .Cafe24Ssurround .area_txt .txt1{ font-size: 25px;            }
+.sample.area_img .Cafe24Ssurround .area_txt .txt1{ font-size: 26px;          }
+.sample.area_img.number .Cafe24Ssurround .area_txt .txt1{ font-size: 22px;   }
+.sample .Cafe24Ssurround .area_txt .txt2{ font-size: 59px;                   }
+.sample.words .Cafe24Ssurround .area_txt .txt2{ font-size: 57px;             }
+.sample.area_img .Cafe24Ssurround .area_txt .txt2{ font-size: 44px;          }
+.sample.area_img.words .Cafe24Ssurround .area_txt .txt2{ font-size: 44px;    }
+
+/* Dovemayo 둘기마요 */
+.sample .Dovemayo .area_txt .txt1{ font-size: 40px;                   }
+.sample.number .Dovemayo .area_txt .txt1{ font-size: 29px;            }
+.sample.area_img .Dovemayo .area_txt .txt1{ font-size: 30px;          }
+.sample.area_img.number .Dovemayo .area_txt .txt1{ font-size: 25px;   }
+.sample .Dovemayo .area_txt .txt2{ font-size: 70px;                   }
+.sample.words .Dovemayo .area_txt .txt2{ font-size: 66px;             }
+.sample.area_img .Dovemayo .area_txt .txt2{ font-size: 53px;          }
+.sample.area_img.words .Dovemayo .area_txt .txt2{ font-size: 53px;    }
+
+/* suit 수트체 */
+.sample .suit .area_txt p{ margin: -5px;                          }
+.sample.area_img .suit .area_txt p{ margin: -5px;                 }
+.sample .suit .area_txt .txt1{ font-size: 37px;                   }
+.sample.number .suit .area_txt .txt1{ font-size: 28px;            }
+.sample.area_img .suit .area_txt .txt1{ font-size: 28px;          }
+.sample.area_img.number .suit .area_txt .txt1{ font-size: 23px;   }
+.sample .suit .area_txt .txt2{ font-size: 70px;                   }
+.sample.words .suit .area_txt .txt2{ font-size: 66px;             }
+.sample.area_img .suit .area_txt .txt2{ font-size: 53px;          }
+.sample.area_img.words .suit .area_txt .txt2{ font-size: 53px;    }
+
+/* baeum KOHI배움 */
+.sample .baeum .area_txt .txt1{ font-size: 32px;                   }
+.sample.number .baeum .area_txt .txt1{ font-size: 23px;            }
+.sample.area_img .baeum .area_txt .txt1{ font-size: 24px;          }
+.sample.area_img.number .baeum .area_txt .txt1{ font-size: 20px;   }
+.sample .baeum .area_txt .txt2{ font-size: 60px;                   }
+.sample.words .baeum .area_txt .txt2{ font-size: 57px;             }
+.sample.area_img .baeum .area_txt .txt2{ font-size: 45px;          }
+.sample.area_img.words .baeum .area_txt .txt2{ font-size: 45px;    }
+
+/* nanumbarungothic 나눔바른고딕체  */
+.sample .nanumbarungothic .area_txt p{ margin: -10px;                         }
+.sample.area_img .nanumbarungothic .area_txt p{ margin: -5px;                 }
+.sample .nanumbarungothic .area_txt .txt1{ font-size: 32px;                   }
+.sample.number .nanumbarungothic .area_txt .txt1{ font-size: 24px;            }
+.sample.area_img .nanumbarungothic .area_txt .txt1{ font-size: 25px;          }
+.sample.area_img.number .nanumbarungothic .area_txt .txt1{ font-size: 19px;   }
+.sample .nanumbarungothic .area_txt .txt2{ font-size: 67px;                   }
+.sample.words .nanumbarungothic .area_txt .txt2{ font-size: 64px;             }
+.sample.area_img .nanumbarungothic .area_txt .txt2{ font-size: 51px;          }
+.sample.area_img.words .nanumbarungothic .area_txt .txt2{ font-size: 51px;    }
+
+
+.option {
+    text-align: left;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.option h2{
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.option .opt_zip{
+    width: 45%;
+    padding: 1% 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.option .opt_item{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.option .opt_item .color-select{
+    display: block;
+    margin: 7px 0;
+}
+
+.option .opt_item select{
+    width: 70%;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.option .opt_item input[type="text"], input[type="tel"]{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.emailbox{
+    text-align: left;
+}
+
+.emailbox .into{
+    margin: 5px 0;
+}
+
+.emailbox input[type="text"]{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.emailbox .div_radio{
+    display: block;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.emailbox .div_radio .inline{
+    margin: 5px;
+}
+
+.emailbox .agree{
+    margin-bottom: 10px;
+}
+
+.emailbox  .agree textarea{
+    width: 90%;
+}
+
+.btn_sendemail{
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: cornflowerblue;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.emailbox .infobox ul{
+    list-style: square;
+}
+
+
+@media ( max-width: 768px ) {
+    
+    .mo.sample {
+        padding: 5px 30px;
+        width: calc(126px * 2.5);
+        height: calc(34px * 2.5);
+        position: fixed;
+        background: #fff;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .mo.sample .shape {
+        width: calc(126px * 2);
+        height: calc(34px * 2);
+    }
+    
+    .mo.sample h5{
+        font-size: 0.7rem;
+        margin: 5px 0;
+    }
+    
+
+    /* TheJamsil5 더잠실체 */
+    .mo.sample .TheJamsil5 .area_txt .txt1{ font-size: 18px;                 }
+    .mo.sample.number .TheJamsil5 .area_txt .txt1{ font-size: 14px;            }
+    .mo.sample.area_img .TheJamsil5 .area_txt .txt1{ font-size: 13px;          }
+    .mo.sample.area_img.number .TheJamsil5 .area_txt .txt1{ font-size: 11px; }
+    .mo.sample .TheJamsil5 .area_txt .txt2{ font-size: 30px;                   }
+    .mo.sample.words .TheJamsil5 .area_txt .txt2{ font-size: 27px;             }
+    .mo.sample.area_img .TheJamsil5 .area_txt .txt2{ font-size: 22px;          }
+    .mo.sample.area_img.words .TheJamsil5 .area_txt .txt2{ font-size: 22px;    }
+
+    /* BMEULJIRO 을지로체 */
+    .mo.sample .BMEULJIRO .area_txt .txt1{ font-size: 21px;                   }
+    .mo.sample.number .BMEULJIRO .area_txt .txt1{ font-size: 15px;            }
+    .mo.sample.area_img .BMEULJIRO .area_txt .txt1{ font-size: 15px;        }
+    .mo.sample.area_img.number .BMEULJIRO .area_txt .txt1{ font-size: 13px;   }
+    .mo.sample .BMEULJIRO .area_txt .txt2{ font-size: 33px;                   }
+    .mo.sample.words .BMEULJIRO .area_txt .txt2{ font-size: 31px;             }
+    .mo.sample.area_img .BMEULJIRO .area_txt .txt2{ font-size: 25px;          }
+    .mo.sample.area_img.words .BMEULJIRO .area_txt .txt2{ font-size: 25px;    }
+
+    /* nanummyeongjo 나눔명조 */
+    .mo.sample .nanummyeongjo .area_txt .txt1{ font-size: 16px;                   }
+    .mo.sample.number .nanummyeongjo .area_txt .txt1{ font-size: 13px;            }
+    .mo.sample.area_img .nanummyeongjo .area_txt .txt1{ font-size: 12.5px;          }
+    .mo.sample.area_img.number .nanummyeongjo .area_txt .txt1{ font-size: 10px;   }
+    .mo.sample .nanummyeongjo .area_txt .txt2{ font-size: 31px;                   }
+    .mo.sample.words .nanummyeongjo .area_txt .txt2{ font-size: 30px;             }
+    .mo.sample.area_img .nanummyeongjo .area_txt .txt2{ font-size: 23px;          }
+    .mo.sample.area_img.words .nanummyeongjo .area_txt .txt2{ font-size: 23px;    }
+
+    /* KCC-eunyoung KCC은영체 */
+    .mo.sample .KCC-eunyoung .area_txt p{ margin: -10px;                         }
+    .mo.sample.area_img .KCC-eunyoung .area_txt p{ margin: -10px;                }
+    .mo.sample .KCC-eunyoung .area_txt .txt1{ font-size: 31px;                   }
+    .mo.sample.number .KCC-eunyoung .area_txt .txt1{ font-size: 22px;            }
+    .mo.sample.area_img .KCC-eunyoung .area_txt .txt1{ font-size: 23px;          }
+    .mo.sample.area_img.number .KCC-eunyoung .area_txt .txt1{ font-size: 17px;   }
+    .mo.sample .KCC-eunyoung .area_txt .txt2{ font-size: 55px;                  }
+    .mo.sample.words .KCC-eunyoung .area_txt .txt2{ font-size: 48px;             }
+    .mo.sample.area_img .KCC-eunyoung .area_txt .txt2{ font-size: 46px;          }
+    .mo.sample.area_img.words .KCC-eunyoung .area_txt .txt2{ font-size: 40px;    }
+
+    /* nanumgothic 나눔고딕 */
+    .mo.sample .nanumgothic .area_txt p{ margin: -5px;                          }
+    .mo.sample.area_img .nanumgothic .area_txt p{ margin: -5px;                }
+    .mo.sample .nanumgothic .area_txt .txt1{ font-size: 17px;                   }
+    .mo.sample.number .nanumgothic .area_txt .txt1{ font-size: 13px;            }
+    .mo.sample.area_img .nanumgothic .area_txt .txt1{ font-size: 12px;          }
+    .mo.sample.area_img.number .nanumgothic .area_txt .txt1{ font-size: 10px;   }
+    .mo.sample .nanumgothic .area_txt .txt2{ font-size: 36px;                   }
+    .mo.sample.words .nanumgothic .area_txt .txt2{ font-size: 34px;             }
+    .mo.sample.area_img .nanumgothic .area_txt .txt2{ font-size: 26px;          }
+    .mo.sample.area_img.words .nanumgothic .area_txt .txt2{ font-size: 26px;    }
+
+    /* sansMedium 산스체 */
+    .mo.sample .sansMedium .area_txt .txt1{ font-size: 17px;                   }
+    .mo.sample.number .sansMedium .area_txt .txt1{ font-size: 12px;            }
+    .mo.sample.area_img .sansMedium .area_txt .txt1{ font-size: 13px;        }
+    .mo.sample.area_img.number .sansMedium .area_txt .txt1{ font-size: 10px; }
+    .mo.sample .sansMedium .area_txt .txt2{ font-size: 32px;                   }
+    .mo.sample.words .sansMedium .area_txt .txt2{ font-size: 29px;             }
+    .mo.sample.area_img .sansMedium .area_txt .txt2{ font-size: 24px;          }
+    .mo.sample.area_img.words .sansMedium .area_txt .txt2{ font-size: 22px;    }
+
+    /* gyeonggiBatang 경기천년바탕체 */
+    .mo.sample .gyeonggiBatang .area_txt .txt1{ font-size: 18px;                   }
+    .mo.sample.number .gyeonggiBatang .area_txt .txt1{ font-size: 13px;            }
+    .mo.sample.area_img .gyeonggiBatang .area_txt .txt1{ font-size: 14px;          }
+    .mo.sample.area_img.number .gyeonggiBatang .area_txt .txt1{ font-size: 12px; }
+    .mo.sample .gyeonggiBatang .area_txt .txt2{ font-size: 37px;                   }
+    .mo.sample.words .gyeonggiBatang .area_txt .txt2{ font-size: 35px;             }
+    .mo.sample.area_img .gyeonggiBatang .area_txt .txt2{ font-size: 28px;          }
+    .mo.sample.area_img.words .gyeonggiBatang .area_txt .txt2{ font-size: 29px;    }
+
+    /* lottemarthappy 롯데행복체 */
+    .mo.sample .lottemarthappy .area_txt .txt1{ font-size: 18px;                   }
+    .mo.sample.number .lottemarthappy .area_txt .txt1{ font-size: 14px;            }
+    .mo.sample.area_img .lottemarthappy .area_txt .txt1{ font-size: 14px;          }
+    .mo.sample.area_img.number .lottemarthappy .area_txt .txt1{ font-size: 11px;   }
+    .mo.sample .lottemarthappy .area_txt .txt2{ font-size: 38px;                   }
+    .mo.sample.words .lottemarthappy .area_txt .txt2{ font-size: 36px;             }
+    .mo.sample.area_img .lottemarthappy .area_txt .txt2{ font-size: 29px;          }
+    .mo.sample.area_img.words .lottemarthappy .area_txt .txt2{ font-size: 29px;    }
+
+    /* Cafe24Ssurround 써라운드체 */
+    .mo.sample .Cafe24Ssurround .area_txt .txt1{ font-size: 17px;                   }
+    .mo.sample.number .Cafe24Ssurround .area_txt .txt1{ font-size: 13px;            }
+    .mo.sample.area_img .Cafe24Ssurround .area_txt .txt1{ font-size: 13px;          }
+    .mo.sample.area_img.number .Cafe24Ssurround .area_txt .txt1{ font-size: 11px;   }
+    .mo.sample .Cafe24Ssurround .area_txt .txt2{ font-size: 30px;                   }
+    .mo.sample.words .Cafe24Ssurround .area_txt .txt2{ font-size: 30px;             }
+    .mo.sample.area_img .Cafe24Ssurround .area_txt .txt2{ font-size: 22px;          }
+    .mo.sample.area_img.words .Cafe24Ssurround .area_txt .txt2{ font-size: 22px;    }
+
+    /* Dovemayo 둘기마요 */
+    .mo.sample .Dovemayo .area_txt .txt1{ font-size: 20px;                   }
+    .mo.sample.number .Dovemayo .area_txt .txt1{ font-size: 15px;            }
+    .mo.sample.area_img .Dovemayo .area_txt .txt1{ font-size: 15px;          }
+    .mo.sample.area_img.number .Dovemayo .area_txt .txt1{ font-size: 12px;   }
+    .mo.sample .Dovemayo .area_txt .txt2{ font-size: 35px;                   }
+    .mo.sample.words .Dovemayo .area_txt .txt2{ font-size: 32px;             }
+    .mo.sample.area_img .Dovemayo .area_txt .txt2{ font-size: 27px;          }
+    .mo.sample.area_img.words .Dovemayo .area_txt .txt2{ font-size: 26px;    }
+
+    /* suit 수트체 */
+    .mo.sample .suit .area_txt p{ margin: -5px;                          }
+    .mo.sample.area_img .suit .area_txt p{ margin: -5px;                 }
+    .mo.sample .suit .area_txt .txt1{ font-size: 19px;                   }
+    .mo.sample.number .suit .area_txt .txt1{ font-size: 14px;            }
+    .mo.sample.area_img .suit .area_txt .txt1{ font-size: 14px;          }
+    .mo.sample.area_img.number .suit .area_txt .txt1{ font-size: 11px;   }
+    .mo.sample .suit .area_txt .txt2{ font-size: 35px;                   }
+    .mo.sample.words .suit .area_txt .txt2{ font-size: 34px;             }
+    .mo.sample.area_img .suit .area_txt .txt2{ font-size: 27px;          }
+    .mo.sample.area_img.words .suit .area_txt .txt2{ font-size: 26px;    }
+
+    /* baeum KOHI배움 */
+    .mo.sample .baeum .area_txt .txt1{ font-size: 16px;                   }
+    .mo.sample.number .baeum .area_txt .txt1{ font-size: 12px;            }
+    .mo.sample.area_img .baeum .area_txt .txt1{ font-size: 12px;          }
+    .mo.sample.area_img.number .baeum .area_txt .txt1{ font-size: 10px;   }
+    .mo.sample .baeum .area_txt .txt2{ font-size: 30px;                   }
+    .mo.sample.words .baeum .area_txt .txt2{ font-size: 15px;             }
+    .mo.sample.area_img .baeum .area_txt .txt2{ font-size: 22px;          }
+    .mo.sample.area_img.words .baeum .area_txt .txt2{ font-size: 22px;    }
+
+    /* nanumbarungothic 나눔바른고딕체  */
+    .mo.sample .nanumbarungothic .area_txt p{ margin: -5px;                         }
+    .mo.sample.area_img .nanumbarungothic .area_txt p{ margin: -5px;                 }
+    .mo.sample .nanumbarungothic .area_txt .txt1{ font-size: 17px;                   }
+    .mo.sample.number .nanumbarungothic .area_txt .txt1{ font-size: 12px;            }
+    .mo.sample.area_img .nanumbarungothic .area_txt .txt1{ font-size: 13px;          }
+    .mo.sample.area_img.number .nanumbarungothic .area_txt .txt1{ font-size: 10px;   }
+    .mo.sample .nanumbarungothic .area_txt .txt2{ font-size: 34px;                   }
+    .mo.sample.words .nanumbarungothic .area_txt .txt2{ font-size: 33px;             }
+    .mo.sample.area_img .nanumbarungothic .area_txt .txt2{ font-size: 26px;          }
+    .mo.sample.area_img.words .nanumbarungothic .area_txt .txt2{ font-size: 26px;    }
+
+    .option{
+        position: relative;
+        top: calc(34px * 3.3);
+    }
+    
+    .option .opt_zip{
+        width: 90%;
+    }
+
+    .option .opt_item {
+        margin-bottom: 1rem;
+    }
+
+    .emailbox{
+        position: relative;
+        top: calc(34px * 3);
+    }
+
+    .emailbox .div_radio{
+        display: block;
+    }
+    
+}
