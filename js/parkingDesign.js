@@ -235,13 +235,13 @@ function fn_setForm(){
     $("#c_words").val($("#wordsEdit").val());
     $("#c_number").val($("#number").text());
 
+    var img;
     html2canvas($('#shape')[0]).then(function(canvas){
-        $("#c_img").val(canvas.toDataURL('image/png'));
+        img = canvas.toDataURL('image/png');
 	});
-    html2canvas($('#shape')[0]).then(function(canvas){
-        momo2 = canvas.toDataURL("image/png");
-    });
     
+    $("#c_img").val(img);
+
     if($("[name='take']:checked").val() == "email"){
         fn_sendEmail();
     } else{
@@ -269,6 +269,7 @@ function fn_saveImg(){
 }
 
 function fn_sendEmail(){	
+    $("#loadingPopup").show();
 	var queryString = $("form[name=emailfrm]").serialize() ;
 	
 	$.ajax({
