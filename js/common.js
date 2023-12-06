@@ -16,17 +16,6 @@ function removeFormat_num(num){
 	return num.toString().replace(/\,/g, "");
 }
 
-// 자평 계산
-function calJa (n){
-	var cut = n%300;
-	var ja = Math.floor(n/300) + 1;
-	if ( cut == 0){
-		ja = ja - 1;
-	}
-	
-	return ja;
-}
-
 function fn_layerPop(el, txt, focusEl){
 	$("#pLayerTxt").text(txt);
 	$(el).show();

@@ -1,5 +1,6 @@
 $(function(){
     fn_setColor();
+	$("#c_market").val(getParameter("to"));
     
     $("[name='design']").on('click', function(){
         $("[name='design']").each(function(){
@@ -215,12 +216,14 @@ function fn_setForm(){
 
     var acrylicColor = $("[name='acrylicColor']:checked").data('nm');
 
-    if("색상" == acrylicColor){
+    if("단색" == acrylicColor){
         acrylicColor += "(" + $("#acrylicColor-picker").val() + ")";
     }else if("투톤" == acrylicColor){
         acrylicColor += "(" + $("#acrylicColor-picker").val() + ","+ $("#acrylicColor-picker2").val() + ")";
     }
     $("#c_acrylicColor").val(acrylicColor);
+    
+    $("#c_acrylicStyle").val($("#shape").attr('style'));
 
     $("#c_class").val($("#sample").prop('class') );
     $("#c_logo").val($("#logoStyle").val() + '(' + $("[name='logoColor']:checked").val() + ')');
@@ -231,6 +234,13 @@ function fn_setForm(){
 
     $("#c_words").val($("#wordsEdit").val());
     $("#c_number").val($("#number").text());
+
+    html2canvas($('#shape')[0]).then(function(canvas){
+        $("#c_img").val(canvas.toDataURL('image/png'));
+	});
+    html2canvas($('#shape')[0]).then(function(canvas){
+        momo2 = canvas.toDataURL("image/png");
+    });
     
     if($("[name='take']:checked").val() == "email"){
         fn_sendEmail();
@@ -264,7 +274,7 @@ function fn_sendEmail(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbxVRhAZ5l1Vflw8zr8zfWlNwf6R16dUxFG4ooNvLOrGcZPnTOx3SHrcJYzW3kFvB98/exec',
+		url : 'https://script.google.com/macros/s/AKfycbwHiLB0PX2LMe_R5uElapLIcUB0bhcu6Uo-OAHvZxvfg3dq1Chy-eUeWoAaZKDisDsL/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			fn_layerPop($("#layer_alert"), error);
