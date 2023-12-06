@@ -235,18 +235,15 @@ function fn_setForm(){
     $("#c_words").val($("#wordsEdit").val());
     $("#c_number").val($("#number").text());
 
-    var img;
     html2canvas($('#shape')[0]).then(function(canvas){
-        img = canvas.toDataURL('image/png');
-	});
-    
-    $("#c_img").val(img);
+        $("#c_img").val(canvas.toDataURL('image/png'));
 
-    if($("[name='take']:checked").val() == "email"){
-        fn_sendEmail();
-    } else{
-        fn_saveImg();
-    }
+        if($("[name='take']:checked").val() == "email"){
+            fn_sendEmail();
+        } else{
+            fn_saveImg();
+        }
+    });
 }
 
 function fn_saveImg(){
