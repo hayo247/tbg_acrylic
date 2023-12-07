@@ -88,17 +88,9 @@ $(function(){
     $("#numEdit").on('keyup', function(){
         if($(this).val().length > 0){
             $(this).val($(this).val().replace(/[^0-9]/g, ''));
-            $("#number").html($(this).val().replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3'));
+            $("#number").html(format_phonnum($(this).val()));
         } else{
             $("#number").html("010-1234-5678");
-        }
-    });
-    
-    $("[name='take']").on('click', function(){
-        if("email" == $(this).val()){
-            $("#email").show();
-        }else{
-            $("#email").hide();            
         }
     });
     
@@ -188,11 +180,6 @@ function fn_validation(){
         fn_layerPop($("#alertPopup"), "수취인명을 입력하세요.", $("#name"));
         return;
     }
-
-    if($("[name='take']:checked").val() == "email" && $("#email").val() == ""){
-        fn_layerPop($("#alertPopup"), "이메일을 입력하세요.", $("#email"));
-        return;
-    }
     
     if(!$("#agree_privacy").is(":checked")){
         fn_layerPop($("#alertPopup"), "개인정보 취급방침에 동의해주세요.", $("#agree_privacy"));
@@ -228,21 +215,31 @@ function fn_setForm(){
     $("#c_class").val($("#sample").prop('class') );
     $("#c_logo").val($("#logoStyle").val() + '(' + $("[name='logoColor']:checked").val() + ')');
     $("#c_font").val($("#fontStyle option:checked").text());
-    $("#c_fontEn").val($("#fontStyle").val() );
     $("#c_fontColor").val($("#fontColor-picker").val());
     $("#c_fontA").val($("#c_font").val() + "(" + $("#c_fontColor").val() + ")");
 
-    $("#c_words").val($("#wordsEdit").val());
-    $("#c_number").val($("#number").text());
+    
+    if(!$("#design1").prop('checked')){
+        $("#c_logo").val("");
+    }else{
+        $("#c_logo").val($("#logoStyle").val() + '(' + $("[name='logoColor']:checked").val() + ')');
+    }
+
+    if(!$("#design2").prop('checked')){
+        $("#c_number").val("");
+    }else{
+        $("#c_words").val($("#wordsEdit").val());
+    }
+
+    if(!$("#design3").prop('checked')){
+        $("#c_number").val("");
+    }else{
+        $("#c_number").val($("#number").text());
+    }
 
     html2canvas($('#shape')[0]).then(function(canvas){
         $("#c_img").val(canvas.toDataURL('image/png'));
-
-        if($("[name='take']:checked").val() == "email"){
-            fn_sendEmail();
-        } else{
-            fn_saveImg();
-        }
+        fn_saveImg();
     });
 }
 
@@ -252,14 +249,35 @@ function fn_saveImg(){
 
     $("#c_sample").prop('class', $("#sample").prop('class').replace('mo ', ''));
     $("#c_shape").prop('class', $("#shape").prop('class'));
-    $("#c_logoImg").prop('src', $("#logoImg").prop('src'));
 
     $(".c_design").text($("#c_design").val());
     $(".c_acrylicColor").text($("#c_acrylicColor").val());
-    $(".c_logo").text($("#c_logo").val());
     $(".c_fontA").text($("#c_fontA").val());
-    $(".c_words").text($("#c_words").val());
-    $(".c_number").text($("#c_number").val());
+    
+    if(!$("#design1").prop('checked')){
+        $(".c_area_img").hide();
+        $(".cli_logo").hide();
+    }else{
+        $(".c_area_img").show();
+        $(".cli_logo").show();
+        $(".c_logo").text($("#c_logo").val());
+        $("#c_logoImg").prop('src', $("#logoImg").prop('src'));
+    }
+
+    if(!$("#design2").prop('checked')){
+        $(".cli_words").hide();
+    }else{
+        $(".cli_words").show();
+        $(".c_words").text($("#c_words").val());
+    }
+
+    if(!$("#design3").prop('checked')){
+        $(".cli_number").hide();
+    }else{
+        $(".cli_number").show();
+        $(".c_number").text($("#c_number").val());
+    }
+    $("#c_sample").show();
 
 	fn_downloadImg('saveImgForm', "주차번호판견적서");
     fn_sendEmail();
@@ -272,7 +290,7 @@ function fn_sendEmail(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbwHiLB0PX2LMe_R5uElapLIcUB0bhcu6Uo-OAHvZxvfg3dq1Chy-eUeWoAaZKDisDsL/exec',
+		url : 'https://script.google.com/macros/s/AKfycbwAj-naBnh0eSdNMlJAw_qj5L6DYDL7W4EleWWV_s2kn6QYZor8gk-M8-5Qr-nB7bMg/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			fn_layerPop($("#layer_alert"), error);
