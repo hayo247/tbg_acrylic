@@ -88,7 +88,7 @@ $(function(){
     $("#numEdit").on('keyup', function(){
         if($(this).val().length > 0){
             $(this).val($(this).val().replace(/[^0-9]/g, ''));
-            $("#number").html($(this).val().replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3'));
+            $("#number").html(format_num($(this).val()));
         } else{
             $("#number").html("010-1234-5678");
         }
@@ -228,7 +228,6 @@ function fn_setForm(){
     $("#c_class").val($("#sample").prop('class') );
     $("#c_logo").val($("#logoStyle").val() + '(' + $("[name='logoColor']:checked").val() + ')');
     $("#c_font").val($("#fontStyle option:checked").text());
-    $("#c_fontEn").val($("#fontStyle").val() );
     $("#c_fontColor").val($("#fontColor-picker").val());
     $("#c_fontA").val($("#c_font").val() + "(" + $("#c_fontColor").val() + ")");
 
@@ -252,14 +251,33 @@ function fn_saveImg(){
 
     $("#c_sample").prop('class', $("#sample").prop('class').replace('mo ', ''));
     $("#c_shape").prop('class', $("#shape").prop('class'));
-    $("#c_logoImg").prop('src', $("#logoImg").prop('src'));
 
     $(".c_design").text($("#c_design").val());
     $(".c_acrylicColor").text($("#c_acrylicColor").val());
     $(".c_logo").text($("#c_logo").val());
     $(".c_fontA").text($("#c_fontA").val());
-    $(".c_words").text($("#c_words").val());
-    $(".c_number").text($("#c_number").val());
+
+    if(!$("#design1").prop('checked')){
+        $(".c_area_img").hide();
+    }else{
+        $(".c_area_img").show();
+        $("#c_logoImg").prop('src', $("#logoImg").prop('src'));
+    }
+
+    if($("#numEdit").val() == ""){
+        $(".c_words").hide();
+    }else{
+        $(".c_words").show();
+        $(".c_words").text($("#c_words").val());
+    }
+
+    if($("#numEdit").val() == ""){
+        $(".c_number").hide();
+    }else{
+        $(".c_number").show();
+        $(".c_number").text($("#c_number").val());
+    }
+    $(".c_shape").show();
 
 	fn_downloadImg('saveImgForm', "주차번호판견적서");
     fn_sendEmail();
@@ -272,7 +290,7 @@ function fn_sendEmail(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbwHiLB0PX2LMe_R5uElapLIcUB0bhcu6Uo-OAHvZxvfg3dq1Chy-eUeWoAaZKDisDsL/exec',
+		url : 'https://script.google.com/macros/s/AKfycbyUOpt5os2g2yiarMKNBuRMdeGOqQrh9obYaVtNXVWsgyiYPRQc-1bSLPukuuXNObIU/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			fn_layerPop($("#layer_alert"), error);

@@ -7,6 +7,12 @@ function getParameter(name) {
 }
 
 // 숫자 포맷
+function format_phonnum(num){
+	return num.toString().replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3');
+}
+
+
+// 숫자 포맷
 function format_num(num){
 	return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
 }
