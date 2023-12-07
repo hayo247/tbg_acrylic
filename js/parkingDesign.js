@@ -88,7 +88,7 @@ $(function(){
     $("#numEdit").on('keyup', function(){
         if($(this).val().length > 0){
             $(this).val($(this).val().replace(/[^0-9]/g, ''));
-            $("#number").html(format_num($(this).val()));
+            $("#number").html(format_phonnum($(this).val()));
         } else{
             $("#number").html("010-1234-5678");
         }
@@ -231,8 +231,24 @@ function fn_setForm(){
     $("#c_fontColor").val($("#fontColor-picker").val());
     $("#c_fontA").val($("#c_font").val() + "(" + $("#c_fontColor").val() + ")");
 
-    $("#c_words").val($("#wordsEdit").val());
-    $("#c_number").val($("#number").text());
+    
+    if(!$("#design1").prop('checked')){
+        $("#c_logo").val("");
+    }else{
+        $("#c_logo").val($("#logoStyle").val() + '(' + $("[name='logoColor']:checked").val() + ')');
+    }
+
+    if(!$("#design2").prop('checked')){
+        $("#c_number").val("");
+    }else{
+        $("#c_words").val($("#wordsEdit").val());
+    }
+
+    if(!$("#design3").prop('checked')){
+        $("#c_number").val("");
+    }else{
+        $("#c_number").val($("#number").text());
+    }
 
     html2canvas($('#shape')[0]).then(function(canvas){
         $("#c_img").val(canvas.toDataURL('image/png'));
@@ -256,7 +272,7 @@ function fn_saveImg(){
     $(".c_acrylicColor").text($("#c_acrylicColor").val());
     $(".c_logo").text($("#c_logo").val());
     $(".c_fontA").text($("#c_fontA").val());
-
+    
     if(!$("#design1").prop('checked')){
         $(".c_area_img").hide();
     }else{
@@ -264,20 +280,20 @@ function fn_saveImg(){
         $("#c_logoImg").prop('src', $("#logoImg").prop('src'));
     }
 
-    if($("#numEdit").val() == ""){
+    if(!$("#design2").prop('checked')){
         $(".c_words").hide();
     }else{
         $(".c_words").show();
         $(".c_words").text($("#c_words").val());
     }
 
-    if($("#numEdit").val() == ""){
+    if(!$("#design3").prop('checked')){
         $(".c_number").hide();
     }else{
         $(".c_number").show();
         $(".c_number").text($("#c_number").val());
     }
-    $(".c_shape").show();
+    $("#c_sample").show();
 
 	fn_downloadImg('saveImgForm', "주차번호판견적서");
     fn_sendEmail();
@@ -290,7 +306,7 @@ function fn_sendEmail(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbyUOpt5os2g2yiarMKNBuRMdeGOqQrh9obYaVtNXVWsgyiYPRQc-1bSLPukuuXNObIU/exec',
+		url : 'https://script.google.com/macros/s/AKfycbyVtLvC2m2QCGXgY0S2Bsnk_ZgR9UA_z8PRDxLoF-4m2YkmKEoexbrQ3ZpRDzaxFGSM/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			fn_layerPop($("#layer_alert"), error);
