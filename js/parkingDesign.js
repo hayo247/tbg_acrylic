@@ -270,27 +270,29 @@ function fn_saveImg(){
 
     $(".c_design").text($("#c_design").val());
     $(".c_acrylicColor").text($("#c_acrylicColor").val());
-    $(".c_logo").text($("#c_logo").val());
     $(".c_fontA").text($("#c_fontA").val());
     
     if(!$("#design1").prop('checked')){
         $(".c_area_img").hide();
+        $(".cli_logo").hide();
     }else{
         $(".c_area_img").show();
+        $(".cli_logo").show();
+        $(".c_logo").text($("#c_logo").val());
         $("#c_logoImg").prop('src', $("#logoImg").prop('src'));
     }
 
     if(!$("#design2").prop('checked')){
-        $(".c_words").hide();
+        $(".cli_words").hide();
     }else{
-        $(".c_words").show();
+        $(".cli_words").show();
         $(".c_words").text($("#c_words").val());
     }
 
     if(!$("#design3").prop('checked')){
-        $(".c_number").hide();
+        $(".cli_number").hide();
     }else{
-        $(".c_number").show();
+        $(".cli_number").show();
         $(".c_number").text($("#c_number").val());
     }
     $("#c_sample").show();
@@ -306,7 +308,7 @@ function fn_sendEmail(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbyVtLvC2m2QCGXgY0S2Bsnk_ZgR9UA_z8PRDxLoF-4m2YkmKEoexbrQ3ZpRDzaxFGSM/exec',
+		url : 'https://script.google.com/macros/s/AKfycbyA8WpcwEzmhZVqD98ip_86VxHQw_jRgWFeQIrm-VKbnBFPonIa1wTdU91IZcCFr--h/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			fn_layerPop($("#layer_alert"), error);
