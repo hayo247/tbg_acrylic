@@ -36,12 +36,25 @@ function fn_layerPop(el, txt, focusEl){
 
 function fn_downloadImg(obj, nm){
 	html2canvas($('#' + obj)[0]).then(function(canvas){
+                var img = new Image();
+                img.crossOrigin = "Anonymous";
+                img.id = "getshot";
+                img.src = canvas.toDataURL();
+                document.body.appendChild(img);
+
+                var a = document.createElement("a");
+		a.href = getshot.src;
+		a.download = nm + ".png";
+		a.click();
+		document.body.removeChild(img);
+
+		/*
 		var img = document.createElement("a");
 		img.download = nm + ".png";
 		img.href=canvas.toDataURL();
 		document.body.appendChild(img);
 		img.click();
-		img.remove();
+		img.remove();*/
 	});
 }
 
