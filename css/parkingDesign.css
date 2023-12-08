@@ -590,8 +590,8 @@
     .mo.sample.area_img.words .fontSt12 .area_txt .txt2{ font-size: 22px;    }
 
     /* fontSt13 나눔바른고딕체  */
-    .mo.sample .fontSt13 .area_txt p{ margin: -8px;                         }
-    .mo.sample.area_img .fontSt13 .area_txt p{ margin: -8px;                 }
+    .mo.sample .fontSt13 .area_txt p{ margin: 5px;                         }
+    .mo.sample.area_img .fontSt13 .area_txt p{ margin: 5px;                 }
     .mo.sample .fontSt13 .area_txt .txt1{ font-size: 17px;                   }
     .mo.sample.number .fontSt13 .area_txt .txt1{ font-size: 12px;            }
     .mo.sample.area_img .fontSt13 .area_txt .txt1{ font-size: 13px;          }
