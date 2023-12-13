@@ -342,6 +342,10 @@ select:focut {border:1px solid #4374D9}
 	.mobile .step3 .sendForm{float:left;width:100%; margin:3rem 0}
 	.mobile .step3 .cilistSend textarea {width:100%}
 	.mobile .step3 .ciBtn input{font-size:1.5rem}
+	.mobile .step3 .sendForm input{width: 100%; font-size: 4rem; height: 6rem;}
+	.mobile .step3 .sendForm p { font-size : 4rem!important}
+	.mobile .step3 .sendForm input[type="radio"] { width: 4rem; height:4rem}
+	.mobile .step3 .sendForm label{ font-size : 4rem;}
 	.mobile .agreeBtn {margin:10px}
 	.mobile .agreeBox {font-size:2.5rem} 
 	
