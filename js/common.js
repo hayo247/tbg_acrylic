@@ -6,7 +6,7 @@ function getParameter(name) {
     return results === null ? "" : decodeURI(decodeURIComponent(results[1].replace(/\+/g, " ")));
 }
 
-// 숫자 포맷
+// 전화 포맷
 function format_phonnum(num){
 	return num.toString().replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, '$1-$2-$3');
 }
@@ -42,6 +42,25 @@ function fn_downloadImg(obj, nm){
 		document.body.appendChild(img);
 		img.click();
 		img.remove();
+	});
+}
+
+
+function fn_downloadImg2(obj, nm){
+	html2canvas($('#' + obj)[0]).then(function(canvas){
+        canvas.toBlob((blob) => {
+              const url = window.URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              const fileName = nm + '.png';
+            
+              a.href = url;
+              a.download = fileName;
+              document.body.appendChild(a);            
+
+			  a.click();
+              document.body.removeChild(a);
+              window.URL.revokeObjectURL(url);
+		});
 	});
 }
 

@@ -1,0 +1,356 @@
+html, body, table, th, td, textarea, h1, p, select {font-family:'InfinitySans-RegularA1',sans-serif;padding:0;margin:0;font-size:13px;font-weight:400}
+body {color:#222a3b;max-height:4300px;overflow-y:scroll;overflow-x:hidden;margin-bottom:100px;width:100%;position:relative}
+table {border:0;padding:0;margin:0;width:100%}
+a         {font-style:normal;text-decoration:none;color:#555;cursor:pointer;outline:none}
+a:link    {font-style:normal;text-decoration:none;color:#555}
+a:visited {font-style:normal;text-decoration:none;color:#555}
+a:active  {font-style:normal;text-decoration:none;color:#555}
+a:hover   {font-style:normal;text-decoration:none;color:#fff}
+input[type="text"]{background:#fff;border:1px solid #B2CCFF;-webkit-appearance:none;padding:0 7px;font-size:12px;border-radius:3px;outline:none;height:30px;width:95px}
+input[type="number"]{background:#fff;border:1px solid #B2CCFF;-webkit-appearance:none;padding:0 7px;font-size:12px;border-radius:3px;outline:none;height:30px;width:95px}
+input[type="text"][disabled="disabled"]{background-color:#e9e9e9}
+input[type="number"][disabled="disabled"]{background-color:#e9e9e9}
+input:focus {border:1px solid #4374D9}
+select:focut {border:1px solid #4374D9}
+@font-face {font-family:'NanumSquareRound';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');font-weight:normal;font-style:normal}
+@font-face {font-family:'InfinitySans-RegularA1';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');font-weight:normal;font-style:normal}
+.dot {font-family:'dotum'}
+.nanum {font-family:'NanumSquareRound'}
+.ftsize11 {font-size:11px !important}
+.ftsize12 {font-size:12px !important}
+.ftsize14 {font-size:14px !important}
+.ftsize15 {font-size:15px !important}
+.ftsize18 {font-size:18px !important}
+.ftsize20 {font-size:20px !important}
+.ftbold {font-weight:bold !important}
+.fc0 {color:#fce021 !important}
+.fff {color:#fff !important}
+.ftred {color:#f32d2d !important}
+.BtnTypeA {padding:5px;background:#fff;color:#000;font-size:11px;font-family:'dotum';border:1px solid #555}
+.BtnTypeB {cursor:pointer;padding:2px 8px;background-color:#52382b;color:#fff;display:inline-block;margin-left:11px;font-size:11px;font-weight:normal}
+.ftaright {text-align:right !important}
+.pd5 {padding:5px 0 !important}
+
+.nonDisplay{display:none;}
+.pi_select_button{background:#fff;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #eee;border-bottom:1px solid #eee;padding:0 7px;font-size:12px;border-radius:0;outline:none;height:30px;line-height:30px}
+.pi_select_button.ui-button:hover, 
+.pi_select_button.ui-button:focus{border:1px solid #4374D9;background:#fff}
+.pi_select_menu{font-size:12px;color:#000}
+.pi_select_menu.ui-selectmenu-open{min-width:310px}
+.pi_select_menu ul{max-height:250px;overflow-y:scroll}
+.pi_select_menu .ui-menu-item{font-size:12px;background:#fff;padding:2px 0;margin:0;line-height:26px;height:26px}
+.pi_select_menu .ui-menu .ui-menu-item-wrapper{padding:0 10px;margin:0}
+.pi_select_menu .ui-state-active{height:26px;border:none;color:#fff;background:#092c6e;padding:0;margin:0;line-height:26px;font-size:12px}
+
+.pi_radio_label, .pi_radio_label:active, .pi_radio_label:hover{border:none;background:none;padding:0;margin:0;font-size:12px;line-height:22px;color:#333}
+.pi_radio_label.ui-button, .pi_radio_label.ui-button:active, .pi_radio_label.ui-button:hover{border:none;background:none;padding:0;margin:0}
+.pi_radio_label.ui-state-active, .pi_radio_label.ui-state-active:active, .pi_radio_label.ui-state-active:hover{border:none;background:none;padding:0;margin:0}
+.pi_radio_label.ui-visual-focus, .pi_radio_label.ui-visual-focus:active, .pi_radio_label.ui-visual-focus:hover{border:none;background:none;padding:0;margin:0;box-shadow:none}
+.pi_radio_label .ui-icon-background{box-shadow:none;width:14px;height:14px;border:1px solid #ccc;border-radius:50%;background-color:#fff}
+.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon, .ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon{border-color:#333}
+
+.box-guide { display: inline-block; vertical-align: middle}
+.box-guide .button-guide {background:url(./img/icon_q.png); background-size:100%; z-index: 10; overflow: hidden; width: 14px; height: 14px; vertical-align: top; line-height: 999em; border:none; padding:0px}
+.box-guide .box-guide-information{display:none; position: absolute; left: 0; top: 30px; z-index: 20; min-width: 100%; max-width: 190%; padding: 11px 18px 11px 15px; border: 1px solid #233549; border-radius: 2px; background: #fff; letter-spacing: -0.4px; color: #5e636d; font-size: 12px; line-height: 16px}
+.box-guide .box-guide-close {background:url(./img/icon_x.png); background-size:100%; position: absolute; top: 7px;right: 5px;width: 13px; height: 13px;line-height: 999em; border:none;}
+
+.top_banner{font-size:0;text-align:center}
+.top_banner img{width:100%;padding:0;margin:0}
+.title{font-size:0;text-align:center}
+.title img{width:100%;;padding:0;margin:0}
+
+.shadow_layer{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255, 255, 255, 0.4);text-align:center;z-index:999999}
+.shadow_layer .loading_img{margin-top:45%}
+
+.step_title{padding:10px 0;margin:0;font-size:18px}
+.step1, .step2, .step3{padding:0 20px}
+
+.step1{margin-top:10px}
+.step1:after{display:block;clear:both;content:""}
+.step1 .glassSort{margin:0 0 20px 0}
+.step1 .glassSort select{width: 100%; font-size: 20px; padding: 10px; border: 2px solid #4374D9; border-radius: 5px;}
+.step1 .glassSort ul{width:100%;display:inline-block;list-style:none;box-sizing:border-box;padding:0;margin:0}
+.step1 .glassSort ul li{float:left;width:20%;text-align:center;color:#555}
+.step1 .glassSort ul li .glass_group{background:#f8f8f8;display:block;padding:10px 0;margin:3px 5px;border:1px solid #fff;position:relative;font-size:13px;box-sizing:border-box;border-radius:4px;position:relative;letter-spacing:-1px;box-shadow:-1px -1px 0px rgba(0,0,0,0.1); letter-spacing:.5rem}
+.step1 .glassSort ul li .glass_group{background:#f8f8f8;display:block;padding:10px 0;margin:3px 5px;border:1px solid #fff;position:relative;font-size:13px;box-sizing:border-box;border-radius:4px;position:relative;letter-spacing:-1px;box-shadow:-1px -1px 0px rgba(0,0,0,0.1); letter-spacing:.5rem}
+.step1 .glassSort ul li .glass_group:hover{background:#4374D9;color:#fff;cursor:pointer;font-weight:700}
+.step1 .glassSort ul li.selected .glass_group, .CutItem_SelectBox .glassSort ul li.selected .glass_group:hover{border:1px solid #4374D9;box-sizing:border-box;color:#fcff00;font-weight:700;background:#4374D9}
+.step1 .glassSort ul li.selected .glass_group:after {color:#fff}
+.step1 .scroll_help{display:none}
+
+.step1 .glassTypeSort .txtType { padding: 3px 5px;}
+.step1 .glassTypeSort .hrDash { border-top: 2px dashed #ccc; margin:10px 5px;}
+.step1 .glassTypeSort {margin:0 0 20px 0;width:100%;display:inline-block;list-style:none;background:#f8f8f8;padding:5px 0;margin:3px 5px;border:1px solid #fff;font-size:13px;box-sizing:border-box;border-radius:4px;box-shadow:-1px -1px 0px rgba(0,0,0,0.1);}
+.step1 .glassTypeSort ul {width:100%;display:inline-block;list-style:none;box-sizing:border-box;padding:0;margin:0;}
+.step1 .glassTypeSort ul li{float:left;width:20%;text-align:center;color:#e9e9e9; }
+.step1 .glassTypeSort ul.disabled li .glass_group{background:#A6A6A6;display:block;padding:10px 0;margin:3px 5px;border:1px solid #fff;position:relative;font-size:13px;box-sizing:border-box;border-radius:4px;position:relative;letter-spacing:-1px;box-shadow:-1px -1px 0px rgba(0,0,0,0.1); letter-spacing:.5rem}
+.step1 .glassTypeSort ul.disabled li .glass_group:hover{background:#A6A6A6;color:#555;cursor:pointer;font-weight:700}
+
+.step1 .glassTypeSort ul li .glass_group{background:#fff;color:#555;display:block;padding:10px 0;margin:3px 5px;border:1px solid #fff;position:relative;font-size:13px;box-sizing:border-box;border-radius:4px;position:relative;letter-spacing:-1px;box-shadow:-1px -1px 0px rgba(0,0,0,0.1); letter-spacing:.5rem}
+.step1 .glassTypeSort ul li .glass_group:hover{background:#4374D9;color:#fff;cursor:pointer;font-weight:700}
+.step1 .glassTypeSort ul li.selected .glass_group, .CutItem_SelectBox .glassSort ul li.selected .glass_group:hover{border:1px solid #4374D9;box-sizing:border-box;color:#fcff00;font-weight:700;background:#4374D9}
+.step1 .glassTypeSort ul li.selected .glass_group:after {color:#fff}
+.step1 .glassTypeSort ul li .effect_icon{display:block;font-size:8px;padding:1px 3px;position:absolute;top:-1px;background-color:#999}
+.step1 .glassTypeSort ul li .effect_icon.step_0{left:-1px}
+.step1 .glassTypeSort ul li .effect_icon.step_1{left:23px}
+.step1 .glassTypeSort ul li .effect_icon.bestico{background:#4374D9;color:#fcff00}
+.step1 .glassTypeSort ul li .effect_icon.saleico{background:#f32d3d;color:#fff}
+
+.step1 .glassTypeSort ul li.color{float:left;width:5%;text-align:center;color:#e9e9e9}
+.step1 .glassTypeSort ul li.color .glass_group{display:block;border:1px solid #fff;position:relative;font-size:0px;border-radius:4px; height:35px}
+.step1 .glassTypeSort ul li.color .glass_group:hover{filter: invert(10%);}
+.step1 .glassTypeSort ul li.color.selected .glass_group{border:3px solid #000;box-sizing:border-box;}
+
+.step1 .glassTypeSort ul li.design:not(.color) {float:left;width:12.5%;text-align:center;color:#e9e9e9}
+.step1 .glassTypeSort ul li.design:not(.color) .glass_group{display:block;border:1px solid #fff;position:relative;border-radius:4px; height:100px; padding:0 0; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
+.step1 .glassTypeSort ul li.design:not(.color) .glass_group div{position:absolute;top:35px;width: 100%;}
+.step1 .glassTypeSort ul li.design:not(.color) .glass_group:hover{filter: invert(10%); color:#fffs; text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;}
+.step1 .glassTypeSort ul li.design:not(.color).selected .glass_group{border:3px solid #000;box-sizing:border-box; color:#fcff00; text-shadow: -1px 0 #4374D9, 0 1px #4374D9, 1px 0 #4374D9, 0 -1px #4374D9;}
+
+.step2{display:block}
+.step2:after{display:block;clear:both;content:""}
+.step2 .glass_img{float:left;width:55%;min-height:320px}
+.step2 .option_size{width:41%;float:right}
+.step2 .option_size ul{padding:0 0 0 ;margin:0}
+.step2 .option_size ul li{padding:10px 7px;margin:0;list-style:none;border-top:1px solid #e3e3e3}
+.step2 .option_size ul li:first-child{border-top:none}
+.step2 .option_size ul li:last-child{border-top:none}
+.step2 .option_size ul li .inputTitle{display:inline-block;width:45%;font-size:14px; position: relative;}
+.step2 .option_size ul li .ui-selectmenu-button.ui-button, .step2 .option_size ul li .textField{width:36%}
+.step2 .option_size ul li .dataUnit{font-size:13px;display:inline-block;margin-left:5px}
+.mobile_select_glasssort {display:none}
+
+.step2 .option_size {margin: 10px 0}
+.step2 .ciBtn2 {display:block;text-align:center;margin:50px 0}
+.step2 .ciBtn2 span {font-size:22px;font-weight:bold;color:#fff;padding:15px 70px;background:#4374D9;box-shadow:0 3px 0 rgba(0,51,153,0.9)}
+.step2 .glass_processfrm_container{position:relative}
+
+.step3{display:block;clear:both}
+.step3:after{display:block;clear:both;content:""}
+.step3 .glass_add_lists{position:relative;height:313px}
+.step3 .glass_add_lists .fix_head_table{padding:0;border-collapse:collapse}
+.step3 .glass_add_lists .fix_head_table thead{position:absolute;top:0;left:0;width:100%;background-color:#B2CCFF;height:50px}
+.step3 .glass_add_lists .fix_head_table thead tr{display:inline-table;width:100%;height:50px}
+.step3 .glass_add_lists .fix_head_table tbody{position:absolute;top:53px;left:0;width:100%;height:260px;overflow-y:scroll;background-color:#fafafa}
+.step3 .glass_add_lists .fix_head_table tbody tr{display:inline-table;width:100%;height:49px;border-bottom:1px dashed #e3e3e3}
+.step3 .glass_add_lists .fix_head_table tbody tr td{background-color:#fff;text-align:center;font-size:11px}
+.step3 .glass_add_lists .fix_head_table tr .glasscheck{width:30px}
+.step3 .glass_add_lists .fix_head_table tr .glassname{width:calc(34% - 30px)}
+.step3 .glass_add_lists .fix_head_table tr .glasscount{width:9%}
+.step3 .glass_add_lists .fix_head_table tr .glasstype{width:22%}
+.step3 .glass_add_lists .fix_head_table tr .glasstype2{width:10%}
+.step3 .glass_add_lists .fix_head_table tr .glasssheet{width:15%}
+.step3 .glass_add_lists .fix_head_table tr .glassoption{width:20%}
+.step3 .glass_add_lists .fix_head_table tr .glassprice{width:13%}
+.step3 .glass_add_lists .fix_head_table tr .glassAll{width:100%}
+
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul, 
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul{padding:0;margin:0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li, 
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li{padding:0;margin:0;list-style:none;height:25px;line-height:25px;border-bottom:1px dotted #ccc}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li:last-child, 
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li:last-child{border-bottom:none}
+
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line2{height:40px;line-height:40px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line2{height:40px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .vglasstype ul li.line3{height:60px;line-height:60px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line3{height:60px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line4{height:80px;line-height:80px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line4{height:80px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line5{height:100px;line-height:100px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line5{height:100px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line6{height:120px;line-height:120px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line6{height:120px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line7{height:140px;line-height:140px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line7{height:140px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line8{height:160px;line-height:160px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line8{height:160px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line9{height:180px;line-height:180px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line9{height:180px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line10{height:200px;line-height:200px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line10{height:200px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line11{height:220px;line-height:220px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line11{height:220px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line12{height:240px;line-height:240px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line12{height:240px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line13{height:260px;line-height:260px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line13{height:260px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line14{height:280px;line-height:280px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line14{height:280px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line15{height:300px;line-height:300px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line15{height:300px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line16{height:320px;line-height:320px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line16{height:320px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line17{height:340px;line-height:340px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line17{height:340px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line18{height:360px;line-height:360px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line18{height:360px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line19{height:380px;line-height:380px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line19{height:380px;line-height:20px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glasstype ul li.line20{height:400px;line-height:400px;padding:5px 0}
+.step3 .glass_add_lists .fix_head_table tr .glassprocess ul li.line20{height:400px;line-height:20px;padding:5px 0}
+
+.step3 .cutOrdInfo tr td{background:#555;color:#fff;border:0;text-align:center;padding:15px 0;font-size:15px}
+
+.step3 .optionItemBox{clear:both;border-top:1px dashed #ccc;border-bottom:1px dashed #ccc;padding:15px 0;margin:15px 0}
+.step3 .optionItemBox .procOpt {text-align:center;min-height:50px;background:#D5D5D5;margin-bottom:15px;border:1px solid #ccc}
+.step3 .optionItemBox .procOpt p {line-height:50px;font-size:18px;color:#4C4C4C}
+.step3 .option_deliver {display:none}
+
+.step3 .cilistSend {margin:0 0 30px 0;background:#fff;padding:20px;/*box-shadow:0 0 10px rgba(188,188,188,0.2)*/border:1px solid #eee}
+.step3 .cilistSend:after{display:block;clear:both;content:""}
+.step3 .cilistSend .helpText{padding:10px 0;color:#d72643;width:100%}
+.step3 .cilistSend .sendForm{float:left; width:100%;}
+.step3 .cilistSend .sendForm input{width:40%;margin-bottom:10px}
+.step3 .cilistSend .sendForm input[type="radio"]{width: 3%;margin-top:10px}
+.step3 .cilistSend .sendForm label:last-child{margin-right:10px}
+.step3 .cilistSend textarea {width:52%;height:104px;background:#fff;border:1px solid #B2CCFF;padding:5px;float:right}
+
+.step3 .ciBtn {text-align:center;margin:50px 0 70px 0}
+.step3 .ciBtn span {font-size:22px;font-weight:bold;color:#fff;padding:15px 70px;background:#d72643;box-shadow:0 3px 0 rgba(131,42,11,0.9)}
+.step3 .ciBtn input[type="button"] {font-size:22px;font-weight:bold;color:#fff;padding:20px 60px;background:#d72643;box-shadow:0 3px 0 rgba(131,42,11,0.9);border:0;cursor:pointer}
+
+.agreeBox {text-align:center;margin-top:50px;font-size:14px}
+.agreeBtn {display:inline-block;background:#555888;border:1px solid #555888;color:#fff;cursor:pointer;padding:6px 12px;margin-left:12px}
+
+#commentForm textarea {width:95%;height:200px;font-size:11px;color:#000;background:rgba(0,0,0,0.1);border:0px solid #ccc;overflow:scroll;padding:10px;border-radius:5px}
+
+@media ( min-width: 300px ) {
+	.mobile .step_title{padding:10px 0;margin:0;font-size:1rem}
+
+	.mobile .step1 .glassSort {position: relative }
+	.mobile .step1 .glassSort .mobile_select_glasssort {display: block; height: 50px; line-height: 50px; padding: 0 10px; text-align: left; border: 2px solid #4374D9; font-size: 18px; border-radius: 4px; box-shadow: 0 3px 3px rgba(0,0,0,0.1) }
+	.mobile .step1 .glassSort ul {position: absolute; top: 50px; left: 0; background-color: #fff; border: 1px solid #999; padding: 10px 0; height: 300px; overflow-y: scroll; display: none }
+	.mobile .step1 .glassSort ul li { width: 100%;}
+	.mobile .step1 .glassSort ul li .glass_group { background:#fff; font-size: 15px; padding: 15px 0; border: 0; border: 1px dashed #ccc; overflow: scroll; -webkit-overflow-scrolling: touch; z-index: 10;}
+	.mobile .step1 .glassSort ul li.selected .glass_group { background:#4374D9;}
+		
+	.mobile .step1 .glassTypeSort .txtType {font-size:1.2rem}
+	.mobile .step1 .glassTypeSort select{width: 95%; font-size: 1.5rem; padding: 0.2rem; margin:0.3rem; border: 2px solid #4374D9; border-radius: 0.5rem;}
+	.mobile .step1 .glassTypeSort ul { margin: 0.1rem 0; max-height: 20rem; overflow: auto}
+	.mobile	.step1 .glassTypeSort ul li.color{width:20%}
+	.mobile	.step1 .glassTypeSort ul li.color .glass_group{border-radius:10px; height:3.5rem}
+	.mobile	.step1 .glassTypeSort ul li.design:not(.color) {width:100%;}
+	.mobile	.step1 .glassTypeSort ul li.design:not(.color) .glass_group div{font-size:1.3rem;position:absolute;top:1.3rem;width: 100%;}
+    .mobile .step1 .glassTypeSort ul li.design:not(.color) .glass_group {height: 4.5rem}
+
+	.mobile .step2 .glass_img{float:left;width:100%; min-height: 100px;}
+	.mobile .step2 .option_size{width:100%;}
+	.mobile .step2 .option_size ul li{float: left; width: 100%; padding-right: 0; padding-left: 0}
+	.mobile .step2 .option_size ul li .inputData{width: 50%; padding: 5px;}
+	.mobile .step2 .option_size ul li .textField{width: 40%;}
+	
+	.mobile .step2 .ciBtn2 {margin:1rem 0}
+	.mobile .step2 .ciBtn2 span {font-size:1.5rem;padding:1rem 4rem;}
+	
+	.mobile .step3 .glass_add_lists .fix_head_table tbody{top:0;width:100%;height:100%;}
+
+    .mobile .step3 .fix_head_table tbody::-webkit-scrollbar {display: none;}
+	.mobile .step3 .fix_head_table thead {display:none;}
+    .mobile .step3 .fix_head_table tbody tr {padding: 2px 0; display: block; border-bottom: 0px solid #999; border: 2px solid #B2CCFF; border-radius: 10px; height:auto; width:98%; margin-bottom: 10px;}
+	.mobile .step3 .fix_head_table tbody tr td ul {padding: 0 1rem;}
+	.mobile .step3 .fix_head_table tbody tr td ul li { display: block; padding: 7px 10px; margin: 0; list-style: none;text-align: left; border-bottom: 2px dashed #eee; height:auto;}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_title { display: block; width: 20%; padding-left: 10px; float: left}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_title { display: block; width: 20%; padding-left: 10px; float: left}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_plus { width: auto;}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_value { display: block}
+
+	.mobile .step3 .cutOrdInfo tr td { display: block; padding: 10px 0}
+
+	.mobile .step3 .sendForm{float:left;width:100%}
+	.mobile .step3 .cilistSend textarea {width:100%}
+	.mobile .step3 .ciBtn input{font-size:1.5rem}
+	.mobile .step3 .ciBtn input[type="button"] { padding: 1.5rem 1.5rem;}
+	
+	.mobile .agreeBtn {margin:10px}
+	.mobile .agreeBox {font-size:1rem} 
+
+	.mobile .pop-layer {width: 300px;}
+	.mobile .pop-loading {width: 300px;}
+}
+
+@media ( min-width: 800px ) {
+	.mobile table, .mobile tr, .mobile th, .mobile td, .mobile textarea, .mobile h1, .mobile p {font-size: 2.7rem !important;}
+	.mobile input[type="text"]{background:#fff;border:2px solid #B2CCFF;-webkit-appearance:none;padding:0 7px;font-size:3rem;border-radius:5px;outline:none;height:5rem}
+	.mobile input[type="number"]{background:#fff;border:2px solid #B2CCFF;-webkit-appearance:none;padding:0 7px;font-size:3rem;border-radius:5px;outline:none;height:5rem}
+	
+	.mobile input[type="text"][disabled="disabled"]{background-color:#e9e9e9}
+	.mobile input[type="number"][disabled="disabled"]{background-color:#e9e9e9}
+	.mobile input[type="radio"]{width:3rem; height:3rem}
+	.mobile input[type="checkbox"]{width:2.7rem; height:2.7rem}
+	
+	.mobile .ftsize12 {font-size:2rem !important}
+	.mobile .ftsize14 {font-size:2.5rem !important}
+
+	.mobile .step_title{padding:10px 0;margin:0;font-size:2.3rem}
+	.mobile .pi_select_button{border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #eee;border-bottom:1px solid #eee;padding:0 7px;font-size:2.5rem;border-radius:0;outline:none;height:70px;line-height:70px}
+	.mobile .BtnTypeA {padding:1rem; font-size:2rem; border:none}
+	.mobile .BtnTypeB {padding:2px 8px;display:inline-block;margin-left:11px;font-size:2rem;font-weight:normal}
+	.mobile .box-guide .box-guide-information{display:none; position: absolute; left: 0; top: 4.5rem; z-index: 20; min-width: 150%; max-width: 190%; padding: 1rem 3rem 1rem 1rem; border: 1px solid #233549; border-radius: 2px; font-size: 2rem; line-height: 2.3rem}
+	.mobile .box-guide .box-guide-close {background:url(./img/icon_x.png); background-size:100%; position: absolute; top: 7px;right: 1.3rem;width: 2rem; height: 2rem;line-height: 999em; border:none;}
+
+	.mobile .step1, .mobile .step2, .mobile .step3{padding:0 40px}
+	.mobile	.step1{margin-top:20px}
+	
+	.mobile .step1 .glassSort {position: relative; padding: 12px 0 }
+	.mobile .step1 .glassSort select{width: 100%; font-size: 3rem; padding: 20px; border: 2px solid #4374D9; border-radius: 5px;}
+	.mobile .step1 .glassSort .mobile_select_glasssort {display: block; height: 90px; line-height: 90px; padding: 0 10px; text-align: left; border: 2px solid #4374D9; font-size: 3.5rem; border-radius: 4px; box-shadow: 0 3px 3px rgba(0,0,0,0.1) }
+	.mobile .step1 .glassSort ul {position: absolute; top: 110px; left: 0; background-color: #fff; border: 1px solid #999; padding: 10px 0; min-height:400px; overflow-y: scroll; display: none }
+	.mobile .step1 .glassSort ul li { width: 100%;}
+	.mobile .step1 .glassSort ul li .glass_group { background:#fff; font-size: 3rem; padding: 15px 0; border: 0; border: 3px dashed #ccc; overflow: scroll; -webkit-overflow-scrolling: touch; z-index: 10;}
+	.mobile .step1 .glassSort ul li .glass_group:hover{background:#4374D9;}
+	.mobile .step1 .glassSort ul li.selected .glass_group { background:#4374D9;}
+
+	.mobile .step1 .glassTypeSort .txtType {font-size:2rem}
+	.mobile .step1 .glassTypeSort select{width: 98%; font-size: 2.5rem; padding: 15px; margin:7px; border: 2px solid #4374D9; border-radius: 10px;}
+	.mobile .step1 .glassTypeSort ul { margin: 10px 0; max-height:none;}
+	.mobile	.step1 .glassTypeSort ul li.color{width:10%}
+	.mobile	.step1 .glassTypeSort ul li.color .glass_group{border-radius:10px; height:70px}
+	.mobile	.step1 .glassTypeSort ul li.design:not(.color) {width:25%;}
+	.mobile	.step1 .glassTypeSort ul li.design:not(.color) .glass_group div{font-size:2rem;position:absolute;top:30px;width: 100%;}
+	.mobile .step1 .glassTypeSort ul li.design:not(.color) .glass_group {height: 7.5rem}
+	
+	.mobile .step2 .glass_img{float:left;width:100%;}
+	.mobile .step2 .option_size{width:100%;}
+	.mobile .step2 .option_size ul li{float: left; width: 100%; padding-right: 0; padding-left: 0}
+	.mobile .step2 .option_size ul li .inputData{width: 50%; padding: 5px; font-size:3rem}
+	.mobile .step2 .option_size ul li .inputTitle{ font-size: 2.8rem;}
+	.mobile .step2 .option_size ul li .textField{width: 40%;}
+	.mobile .step2 .option_size ul li .dataUnit{font-size:2.3rem;display:inline-block;margin-left:5px}
+	.mobile .box-guide .button-guide {width: 2.8rem; height: 2.8rem;}
+	
+	.mobile .step2 .ciBtn2 {margin:4rem 0}
+	.mobile .step2 .ciBtn2 span {font-size:2.5rem;padding:2rem 5rem;}
+
+	.mobile .step3 .fix_head_table thead {display:none;}
+	.mobile .step3 .optionItemBox .procOpt {min-height:6rem;}
+	.mobile .step3 .optionItemBox .procOpt p {line-height:6rem;}
+	.mobile .step3 .cutOrdInfo tr td { display: block; padding: 20px 0}
+	.mobile .step3 .ciBtn input[type="button"] {font-size:3rem; padding:2rem 4rem;}
+
+	.mobile .step3 .glass_add_lists{position:relative;height:45rem}
+	.mobile .step3 .glass_add_lists .fix_head_table tbody{top:0;width:100%;height:45rem;}
+	
+	.mobile .step3 .fix_head_table tbody tr {padding: 10px 0; display: block; border-bottom: 0px solid #999; border: 2px solid #B2CCFF; border-radius: 10px; height:auto; width:98%; margin-bottom: 10px;}
+	.mobile .step3 .fix_head_table tbody tr td ul {padding: 0 1rem;}
+	.mobile .step3 .fix_head_table tbody tr td ul li { display: block; padding: 7px 10px; margin: 0; list-style: none;text-align: left; border-bottom: 2px dashed #eee; height:auto;}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_title { display: block; width: 20%; padding-left: 10px; float: left}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_title { display: block; width: 20%; padding-left: 10px; float: left}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_plus { width: auto;}
+	.mobile .step3 .fix_head_table tbody tr td ul li .td_value { display: block}
+
+	.mobile .step3 .sendForm{float:left;width:100%; margin:3rem 0}
+	.mobile .step3 .cilistSend textarea {width:100%}
+	.mobile .step3 .ciBtn input{font-size:1.5rem}
+	.mobile .agreeBtn {margin:10px}
+	.mobile .agreeBox {font-size:2.5rem} 
+	
+	.mobile .step2 .option_size ul.t1 li{float: left; width: 100%; padding-right: 0; padding-left: 0}
+	.mobile .step2 .option_size ul.t1 li .inputData{width: 50%; padding: 5px; font-size:3rem}
+	.mobile .step2 .option_size ul.t1 li .inputTitle{ font-size: 6rem;}
+	.mobile .step2 .option_size ul.t1 li .textField{width: 40%; height:7.5rem; font-size:6.5rem}
+	.mobile .step2 .option_size ul.t1 li .dataUnit{font-size:5rem;display:inline-block;margin-left:5px}
+	.mobile .step2 .t1 .ciBtn2 span {font-size:5.5rem;padding:3rem 7rem;}
+	
+	.mobile .t1 .sendForm input{ font-size : 5rem; height:6rem}
+}
