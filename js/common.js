@@ -37,6 +37,7 @@ function fn_layerPop(el, txt, focusEl){
 function fn_downloadImg(obj, nm){
 	html2canvas($('#' + obj)[0]).then(function(canvas){
 		var img = document.createElement("a");
+		img.target = '_blank';
 		img.download = nm + ".png";
 		img.href=canvas.toDataURL();
 		document.body.appendChild(img);
