@@ -592,14 +592,14 @@
     /* fontSt13 나눔바른고딕체  */
     .mo.sample .fontSt13 .area_txt p{ margin: 5px;                         }
     .mo.sample.area_img .fontSt13 .area_txt p{ margin: 5px;                 }
-    .mo.sample .fontSt13 .area_txt .txt1{ font-size: 17px;                   }
-    .mo.sample.number .fontSt13 .area_txt .txt1{ font-size: 12px;            }
+    .mo.sample .fontSt13 .area_txt .txt1{ font-size: 18px;                   }
+    .mo.sample.number .fontSt13 .area_txt .txt1{ font-size: 14px;            }
     .mo.sample.area_img .fontSt13 .area_txt .txt1{ font-size: 13px;          }
-    .mo.sample.area_img.number .fontSt13 .area_txt .txt1{ font-size: 10px;   }
-    .mo.sample .fontSt13 .area_txt .txt2{ font-size: 34px;                   }
-    .mo.sample.words .fontSt13 .area_txt .txt2{ font-size: 33px;             }
-    .mo.sample.area_img .fontSt13 .area_txt .txt2{ font-size: 26px;          }
-    .mo.sample.area_img.words .fontSt13 .area_txt .txt2{ font-size: 26px;    }
+    .mo.sample.area_img.number .fontSt13 .area_txt .txt1{ font-size: 11px;   }
+    .mo.sample .fontSt13 .area_txt .txt2{ font-size: 32px;                   }
+    .mo.sample.words .fontSt13 .area_txt .txt2{ font-size: 32px;             }
+    .mo.sample.area_img .fontSt13 .area_txt .txt2{ font-size: 23px;          }
+    .mo.sample.area_img.words .fontSt13 .area_txt .txt2{ font-size: 23px;    }
 
     .option{
         position: relative;
