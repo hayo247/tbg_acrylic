@@ -290,7 +290,7 @@ function fn_sendEmail(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbyrGbPMnsGjlPyZCJU5ND02slCBBhoe5kJmXcAOvvxrpZQ06Ak-9O-EOsC4L1KPuopL/exec',
+		url : 'https://script.google.com/macros/s/AKfycbwysv5KRb2q1rrRErQOc9jyfyCXhKgrlVEPh3RSVBYRoMAjGlBqIJ1CBG_LRqG1L1e1/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			fn_layerPop($("#layer_alert"), error);
