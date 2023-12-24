@@ -313,7 +313,7 @@ function send_email(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbz9AmaAcNevA0aWQ6kvkirJ0dgLyMJYNr0DExhUvelwGPSZcAmZNRGPd6Ht3IHMB4dE/exec',
+		url : 'https://script.google.com/macros/s/AKfycbzvK9EKA51Q3R5QR8nEWY8dyAvzz6VF93W4GkHTUHQ-EbbFDpAGN44-iMa0juqK034o/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			$("#loadingPopup").hide();
