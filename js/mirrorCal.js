@@ -27,12 +27,36 @@ $(function(){
 	});
 
     $("#diameter").on('change keyup', function(){
+	    
+		if(parseInt($(this).val().replace(/[^0-9]/, '')) > 1200){
+            		fn_layerPop($("#alertPopup"), "선택하신 거울의 최대 지름은 1200mm 를 초과하실 수 없습니다.");
+			$(this).val("1200");
+		}
 	    $("#width").val($(this).val());
 	    $("#height").val($(this).val());
 	    set_cal_price();
 	});
 
-    $(".option_size input").on('change keyup', function(){
+    $("#width, #height, #count").on('change keyup', function(){
+	    $(this).val($(this).val().replace(/[^0-9]/g, ""));
+		
+		// 거울 : 가로 X 세로 : 2400 * 1200 / 1200 * 2400 , 최소값 : 100mm
+		if(parseInt($('#width').val().replace(/[^0-9]/, '')) > 2400){
+            		fn_layerPop($("#alertPopup"), "선택하신 거울의 최대 가로 폭은 2400mm 를 초과하실 수 없습니다.");
+			$('#width').val("2400");
+		}
+		
+		if( parseInt($('#width').val().replace(/[^0-9]/, '')) > 1200
+		 && parseInt($('#height').val().replace(/[^0-9]/, '')) > 1200){
+            		fn_layerPop($("#alertPopup"), "선택하신 거울의 최대 길이는 1200mm 를 초과하실 수 없습니다.");
+			$('#height').val("1200");
+		}
+		
+		if(parseInt($('#height').val().replace(/[^0-9]/, '')) > 2400){
+            		fn_layerPop($("#alertPopup"), "선택하신 거울의 최대 길이는 2400mm 를 초과하실 수 없습니다.");
+			$('#height').val("2400");
+		}
+		
 		set_cal_price();
 	});
 
