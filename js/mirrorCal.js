@@ -13,10 +13,23 @@ $(function(){
 
     $("#shape").on('change', function(){
 		set_img();
+	    if($(this).find('option:checked').text() == "원형"){
+		$("._li_basic_val").hide();
+		$("._li_circle_val").show();
+	    }else{
+		$("._li_circle_val").hide();
+		$("._li_basic_val").show();
+	    }
 	});
 
     $(".option_size select").on('change', function(){
 		set_cal_price();
+	});
+
+    $("#diameter").on('change keyup', function(){
+	    $("#width").val($(this).val());
+	    $("#height").val($(this).val());
+	    set_cal_price();
 	});
 
     $(".option_size input").on('change keyup', function(){
@@ -313,7 +326,7 @@ function send_email(){
 	$.ajax({
 		data : queryString,
 		type : 'post',
-		url : 'https://script.google.com/macros/s/AKfycbzvK9EKA51Q3R5QR8nEWY8dyAvzz6VF93W4GkHTUHQ-EbbFDpAGN44-iMa0juqK034o/exec',
+		url : 'https://script.google.com/macros/s/AKfycbyCU0Tb1SHilbEvBO4nLCfVFJjxGgaB53bt0u_lJZuFXQoM1yug29p7f8lYZYVvnVmv/exec',
 		dataType : 'json',
 		error: function(xhr, status, error){
 			$("#loadingPopup").hide();
