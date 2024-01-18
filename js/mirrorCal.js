@@ -123,9 +123,12 @@ function set_cal_price(){
 	
 	price = (($("#width").val() * $("#height").val()) / 90000) * cost ;
 
-	if(price < 2000){
-		price = 2000;
+	if($("#shape").val() == 0 && price < 3000){
+		price = 3000;
+	} else if($("#shape").val() != 0 && price < 4000){
+		price = 4000;
 	}
+	
 	price = Math.round(price/100) * 100;
 	price = price * $("#count").val();
 
