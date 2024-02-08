@@ -324,15 +324,24 @@ function fn_saveImg(){
 	$("._name").text($("#name").val());
 	$("._addDeliver").text($("#deliver").val());
 	$("._market").text($("#market_name").val());
+	$("._optionCnt").text($("#option_pay_count").text());
 
 	var html = "";
 
 	$("#mirror_cal_cart tbody tr").each(function(idx, me) {
+		html += "	<tr style='border-bottom: 1px solid #adadad;'>";
 		html += "	<td>" +  $(me).find("[name='shape']").val();
 		html += "<br>" +  $(me).find("[name='width']").val() + " X " + $(me).find("[name='height']").val() + " X "  + $(me).find("[name='thickness']").val() + "</td>" ;
 		html += "	<td>" + format_num($(me).find("[name='count']").val()) + "</td>";
 		html += "	<td>" + $(me).find("[name='price']").val() + "</td>";
+		html += "	</tr>";
 	});
+	
+		html += "	<tr style='height:2rem; border-top: 2px solid #4C4C4C; border-bottom: 2px solid #4C4C4C'>";
+		html += "	<td>합 계</td>"
+		html += "	<td>" + $('#tot_count').text() + "</td>"
+		html += "	<td>" + $('#tot_price').text() + "</td>";
+		html += "	</tr>";
 
 	$("._cartList").html(html);
 
